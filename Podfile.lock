@@ -4,12 +4,12 @@ PODS:
   - ModelMapper (6.0.0)
   - Nimble (6.1.0)
   - Quick (1.1.0)
-  - Realm (2.5.1):
-    - Realm/Headers (= 2.5.1)
-  - Realm/Headers (2.5.1)
-  - RealmSwift (2.5.1):
-    - Realm (= 2.5.1)
-  - Swinject (2.0.0)
+  - Realm (2.8.3):
+    - Realm/Headers (= 2.8.3)
+  - Realm/Headers (2.8.3)
+  - RealmSwift (2.8.3):
+    - Realm (= 2.8.3)
+  - Swinject (2.1.0)
 
 DEPENDENCIES:
   - Alamofire
@@ -26,10 +26,10 @@ SPEC CHECKSUMS:
   ModelMapper: 3596a82f26c43491f6a8d3a00bcdba6ba0e62a93
   Nimble: c53e6903fee94041b90ded74f135820437d8bf59
   Quick: dafc587e21eed9f4cab3249b9f9015b0b7a7f71d
-  Realm: 32f86104d37c8521f864d4274050b38ba6190733
-  RealmSwift: f719e7511c902b8908593e8f143f59e47931bdb6
-  Swinject: 2e964a80d70ab09b3949c99032711f89147bfd60
+  Realm: 3601ef091c8c499a31101d8563b991e75546cdce
+  RealmSwift: 8183818515471b01a99abdd2970f8e4fd52b6f4a
+  Swinject: 85e468ac75c5c2d234076f98c591d57d56bc64bc
 
-PODFILE CHECKSUM: 32e89618ae8deaf29eee29d2ffdeb793d1b21fe8
+PODFILE CHECKSUM: 9d6687e41178dc4696e1b9b4a0eadfddc9cb4bc1
 
 COCOAPODS: 1.2.0

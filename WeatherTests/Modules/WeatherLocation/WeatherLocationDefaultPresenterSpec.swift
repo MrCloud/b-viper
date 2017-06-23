@@ -2,22 +2,22 @@ import Quick
 import Nimble
 @testable import Weather
 
-class WeatherLocationDefaultPresenterSpec: QuickSpec {
+class LocationDefaultPresenterSpec: QuickSpec {
     
-    var viewMock: WeatherLocationViewMock!
-    var interactorMock: WeatherLocationInteractorMock!
-    var routerMock: WeatherLocationRouterMock!
+    var viewMock: LocationViewMock!
+    var interactorMock: LocationInteractorMock!
+    var routerMock: LocationRouterMock!
     
-    var presenter: WeatherLocationDefaultPresenter!
+    var presenter: LocationDefaultPresenter!
         
     override func spec() {
         
         beforeEach {
-            self.viewMock = WeatherLocationViewMock()
-            self.interactorMock = WeatherLocationInteractorMock()
-            self.routerMock = WeatherLocationRouterMock()
+            self.viewMock = LocationViewMock()
+            self.interactorMock = LocationInteractorMock()
+            self.routerMock = LocationRouterMock()
             
-            self.presenter = WeatherLocationDefaultPresenter(view: self.viewMock,
+            self.presenter = LocationDefaultPresenter(view: self.viewMock,
                                                              interactor: self.interactorMock,
                                                              router: self.routerMock)
         }
@@ -120,7 +120,7 @@ class WeatherLocationDefaultPresenterSpec: QuickSpec {
 
 // MARK: Mocks
 
-class WeatherLocationInteractorMock: WeatherLocationInteractor {
+class LocationInteractorMock: LocationInteractor {
     
     var locationsWithTextCalled = false
     var textCalled: String?
@@ -144,7 +144,7 @@ class WeatherLocationInteractorMock: WeatherLocationInteractor {
     
 }
 
-class WeatherLocationViewMock: WeatherLocationView {
+class LocationViewMock: LocationView {
     
     var displayLoadingCalled = false
     var displaySearchCalled = false
@@ -178,7 +178,7 @@ class WeatherLocationViewMock: WeatherLocationView {
     
 }
 
-class WeatherLocationRouterMock: WeatherLocationRouter {
+class LocationRouterMock: LocationRouter {
     
     var navigationBackCalled = false
     

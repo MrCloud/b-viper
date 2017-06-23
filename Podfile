@@ -17,3 +17,14 @@ target :WeatherTests do
   pod 'Swinject'
   pod 'RealmSwift'
 end
+
+target :WeatherClient do
+    pod 'Alamofire'
+    pod 'ModelMapper'
+end
+
+target :LocationClient do
+    pod 'Alamofire'
+    pod 'ModelMapper'
+    pod 'RealmSwift'
+end

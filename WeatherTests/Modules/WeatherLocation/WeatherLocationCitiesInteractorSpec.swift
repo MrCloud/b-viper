@@ -2,12 +2,12 @@ import Quick
 import Nimble
 @testable import Weather
 
-class WeatherLocationCitiesInteractorSpec: QuickSpec {
+class LocationCitiesInteractorSpec: QuickSpec {
     
     var citiesServiceMock: CitiesServiceMock!
     var locationStoreServiceMock: LocationStoreServiceMock!
     
-    var interactor: WeatherLocationCitiesInteractor!
+    var interactor: LocationCitiesInteractor!
     
     override func spec() {
         
@@ -15,7 +15,7 @@ class WeatherLocationCitiesInteractorSpec: QuickSpec {
             self.citiesServiceMock = CitiesServiceMock()
             self.locationStoreServiceMock = LocationStoreServiceMock()
             
-            self.interactor = WeatherLocationCitiesInteractor(locationService: self.citiesServiceMock,
+            self.interactor = LocationCitiesInteractor(locationService: self.citiesServiceMock,
                                                               locationStoreService: self.locationStoreServiceMock)
         }
         
